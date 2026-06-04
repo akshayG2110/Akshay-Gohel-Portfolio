@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+      emailjs.init('r761uprFn1DZeVSCP'); // Replace with your EmailJS public key
 
       const templateParams = {
         from_name: formData.name,
@@ -78,8 +78,8 @@ const Contact: React.FC = () => {
       };
 
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_d86rlyp', // Replace with your EmailJS service ID
+        'template_o18cqrq', // Replace with your EmailJS template ID
         templateParams
       );
 
